@@ -35,7 +35,22 @@ body {
 .main-div img {
     height: 350px;
     border-radius: 12px;
+    width:100%;
 }
+
+.main-div {
+    position: relative;
+    text-align: center;
+}
+
+.main-span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 .datetime {
     color: #fff;
