@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 * {
     box-sizing: border-box;
@@ -16,13 +22,12 @@ body {
     align-items: center;
     margin-top: 100px;
     background-image: linear-gradient(to right, grey, white);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 0.1em;
 }
 
-
-
 .upper-div h2 {
-    font-size: 50px;
+    font-size: 60px;
     letter-spacing: 5px;
     padding-bottom: 20px;
 }
@@ -35,13 +40,23 @@ body {
 .main-div img {
     height: 350px;
     border-radius: 12px;
-    width:100%;
 }
 
 .main-div {
     position: relative;
     text-align: center;
+    display: inline-block;
 }
+
+.main-div .text{
+        position: absolute;
+        z-index: 1;
+        margin: 0 auto;
+        top: 90%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 100%; 
+        font-size: 16px;/* Set the width of the positioned div */
+    }
 
 .main-span {
     position: absolute;
@@ -50,15 +65,14 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
-
 .datetime {
     color: #fff;
     background: #10101E;
-    font-family: "Segoe UI", sans-serif;
-    width: 340px;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 700;
+    width: 400px;
     padding: 15px 10px; 
-    border: 3px solid #2E94E3;
+    border: 3px solid white;
     border-radius: 5px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
     transition: 0.5s;
@@ -66,8 +80,8 @@ body {
 }
 
 .datetime:hover {
-    background: #2E94E3;
-    box-shadow: 0 0 30px #2E94E3;
+    background-image: linear-gradient(to right, grey, black);
+    box-shadow: 0 0 30px #17486e;
 }
 
 
@@ -94,7 +108,7 @@ body {
 }
 
 .time span:last-child{
-    background: #2E94E3;
+    background: #6b6c6e;
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
